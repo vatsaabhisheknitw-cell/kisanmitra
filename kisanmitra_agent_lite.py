@@ -368,7 +368,7 @@ Context data:
 
     # Use pre-fill for Telugu to force Telugu output
     if language == "telugu":
-        messages.append({"role": "assistant", "content": "# 🌾 "})
+        messages.append({"role": "assistant", "content": "# 🌾"})
 
     response = client.messages.create(
         model=MODEL_SMART,
@@ -380,7 +380,7 @@ Context data:
 
     result = response.content[0].text
     if language == "telugu":
-        result = "# 🌾 " + result  # Add back the pre-fill
+        result = "# 🌾 " + result  # Add back the pre-fill prefix
 
     # Telugu fallback check
     if language == "telugu" and not _is_telugu(result):
