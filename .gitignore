@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# Virtual environments
+venv/
+env/
+.venv/
+.idea/
+
+# Environment variables (NEVER commit API keys!)
+.env
+*.key
+
+# IDE
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Vector store
+chroma/
+chromadb/
+
+# Logs
+*.log
+
+# Streamlit
+.streamlit/secrets.toml
